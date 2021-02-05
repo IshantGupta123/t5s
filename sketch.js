@@ -34,23 +34,23 @@ ball.bounceoff(edges);
  //add condition to check if box touching surface and make it box
 if(box1.isTouching(ball) && ball.bounceoff(box1)){
     ball.shapeColor="blue";
-    music.play();
+    game.play();
 }
 if(box2.isTouching(ball) && ball.bounceoff(box1)){
     ball.shapeColor="red";
-    music.play();
+    game.play();
 
 }
 if(box3.isTouching(ball) ){
     ball.shapeColor="green";
     ball.velocityX=0;
     ball.velocityY=0;
-    music.stop();
+    game.stop();
 
 }
 if(box2.isTouching(ball) && ball.bounceoff(box1)){
     ball.shapeColor="pink";
-    music.play();
+    game.play();
 
 }
 
